@@ -48,10 +48,7 @@ public class controller {
     @GetMapping
     public List<Alumno> obtenerTodosLosEmpleados() {
         List<Alumno> empleados = (List<Alumno>) repositoryEmpleado.findAll();
-//        List<DTOEmpleado> dtoEmpleados = new ArrayList<>();
-//        for (Alumno empleado : empleados) {
-//            dtoEmpleados.add(new DTOAlumno(empleado.getId(), empleado.getNombre(), empleado.getDireccion(), empleado.getTelefono()));
-//        }
+
         return empleados;
     }
 
